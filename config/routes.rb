@@ -4,6 +4,7 @@ Scheduler::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   resources :events
+  resources :instructors
   root 'welcome#index'
 
   # Example of regular route:
