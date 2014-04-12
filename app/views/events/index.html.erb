@@ -1,0 +1,20 @@
+<h1>All Events</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+ 
+  <% @events.each do |event| %>
+    <tr>
+      <td><%= event.name %></td>
+      <td><%= event.description %></td>
+	  <td><%= link_to 'Show', event_path(event) %></td>
+	  <td><%= link_to 'Edit', edit_event_path(event) %></td>
+
+    </tr>
+  <% end %>
+</table>
+
+<%= render 'events_footer' %>
