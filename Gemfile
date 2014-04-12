@@ -45,3 +45,4 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'bootstrap-datepicker-rails'
+gem 'twitter-bootstrap-rails'
